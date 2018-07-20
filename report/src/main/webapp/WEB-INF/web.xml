@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<servlet>
+		<servlet-name>HelloForm</servlet-name>
+		<servlet-class>servlet.HelloForm</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>HelloForm</servlet-name>
+		<url-pattern>/HelloForm</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>DatabaseAccess</servlet-name>
+		<servlet-class>servlet.DatabaseAccess</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>DatabaseAccess</servlet-name>
+		<url-pattern>/DatabaseAccess</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>UploadServlet </servlet-name>
+		<servlet-class>servlet.UploadServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UploadServlet</servlet-name>
+		<url-pattern>/Upload</url-pattern>
+	</servlet-mapping>
+</web-app>

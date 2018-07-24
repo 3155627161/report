@@ -35,7 +35,7 @@ public class UploadServlet extends HttpServlet {
  
     // 上传配置
     private static final int MAX_FILE_SIZE      = 1024 * 1024 * 20; // 20MB
-    private static final int MAX_REQUEST_SIZE   = 1024 * 1024 * 60; // 50MB
+    private static final int MAX_REQUEST_SIZE   = 1024 * 1024 * 60; // 60MB
     // JDBC 驱动名及数据库 URL
     static final String JDBC_DRIVER = "com.mysql.jdbc.Driver";  
     static final String DB_URL = "jdbc:mysql://localhost:3306/reportDB";

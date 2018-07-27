@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="./css/bootstrap.css">
+<link rel="stylesheet" href="./css/bootstrap-table.css">
+
+<title>查询</title>
+</head>
+<body>
+    <div class="row base-margin" id="query">
+        <ol class="breadcrumb">
+            <li><strong><span style="color: #27a0d7">用户列表</span></strong></li>
+        </ol>
+        <form class="form-inline" role="form" style="float: left; width: 100%" method="post" id="queryForm">
+            <div class="form-group">
+                <label for="userName">电话:</label> 
+                <input type="text" class="form-control" name="userName" id="userName"  placeholder="电话号码">
+            </div>
+            <div class="form-group">
+                <label >日期:</label>
+                <input placeholder="开始日期" class="form-control layer-date" id="startDate" name="startDate">
+                <input placeholder="结束日期" class="form-control layer-date" id="endDate" name="endDate">
+            </div>
+            <div class="form-group">
+                <button type="button" id="queryBtn" onclick="doQuery();" class="btn btn-primary">查询</button>
+            </div>
+        </form>
+    </div>
+    <div class="container" style="width: 100%">
+        <table id="demo-table">
+        </table>
+    </div>
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="./js/jquery-3.3.1.min.js"></script>
+	<script src="./js/popper.min.js"></script>
+	<script src="./js/bootstrap.min.js"></script>
+	<script src="./js/bootstrap-table.min.js"></script>
+	<script src="./locale/bootstrap-table-zh-CN.js"></script>
+	<script src="./js/bootstrap-table-export.js"></script>
+	<script src="./js/laydate/laydate.js"></script>
+	<script src="./js/mytable.js"></script>
+</body>
+</html>

@@ -125,9 +125,11 @@ public class UploadServlet extends HttpServlet {
             conn.close();
         } catch(SQLException se) {
             // 处理 JDBC 错误
+        	out.println("数据库异常！提交失败");
             se.printStackTrace();
         } catch(Exception e) {
             // 处理 Class.forName 错误
+        	out.println("数据库异常！提交失败");
             e.printStackTrace();
         }finally{
             // 最后是用于关闭资源的块
